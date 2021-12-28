@@ -1,9 +1,12 @@
 n,k = map(int, input().split())
 count=0
-while(n!=1):
-    if(n%k==0):
-        n/=k
+while(n>=k):
+    remain = n%k
+    if(remain == 0):
+        n = int(n/k)
+        count+=1
     else:
-        n-=1
-    count+=1
+        n-=remain
+        count+=remain
+count+=(n-1)
 print(count)

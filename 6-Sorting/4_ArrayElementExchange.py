@@ -5,8 +5,8 @@ a.sort()
 b.sort(reverse=True)
 count = 0
 for i in range(k):
-    if b[i]>a[i]:
-        a[i],b[i] = b[i],a[i]
+    if b[i] > a[i]:
+        a[i], b[i] = b[i], a[i]
     else:
         break
 print(sum(a))
